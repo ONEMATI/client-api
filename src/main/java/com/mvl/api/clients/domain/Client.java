@@ -24,7 +24,7 @@ public class Client {
     private LocalDateTime createAt;
     @Column(name = "active")
     private boolean active;
-    @Column(name = "address")
+
     @OneToOne(mappedBy = "client", cascade = {CascadeType.ALL}, fetch = FetchType.LAZY)
     private Address address;
 
